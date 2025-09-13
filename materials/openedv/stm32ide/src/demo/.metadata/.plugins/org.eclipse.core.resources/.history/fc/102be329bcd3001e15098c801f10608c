@@ -1,0 +1,26 @@
+/*
+ * oled.c
+ *
+ *  Created on: Feb 25, 2024
+ *      Author: login
+ */
+
+
+#include "oled.h"
+
+void oled_data_out(uint8_t data)
+{
+    GPIOC->ODR = (GPIOC->ODR & 0XFF00) | (data & 0X00FF);
+}
+
+
+void oled_wr_byte(uint8_t data, uint8_t cmd)
+{
+	OLED_RS (cmd);			/* 数据类型，由传参决定 */
+	OLED_CS ( 0 );			/* 拉低片选线，选中SSD1306 */
+	OLED_WR ( 0 );			/* 拉低WR线，准备数据 */
+	oled_data_out(data); 	/* WR低电平期间，准备数据 */
+	OLED_WR ( 1 );			/* 在WR上升沿，数据发出 */
+	OLED_CS ( 1 );			/* 取消片选 */
+	OLED_RS ( 1 );			/* 释放RS线，恢复默认 */
+}

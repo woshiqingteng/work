@@ -1,0 +1,10 @@
+10:01:45 **** Incremental Build of configuration Output for project 18_2_ADC_DMA_Single_Channel ****
+make -j16 all 
+arm-none-eabi-size   18_2_ADC_DMA_Single_Channel.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49952	    116	   2604	  52672	   cdc0	18_2_ADC_DMA_Single_Channel.elf
+Finished building: default.size.stdout
+ 
+
+10:01:46 Build Finished. 0 errors, 0 warnings. (took 729ms)
+

@@ -1,0 +1,10 @@
+14:09:41 **** Incremental Build of configuration Output for project 09_2_GTIM_PWM ****
+make -j16 all 
+arm-none-eabi-size   09_2_GTIM_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12920	     20	   1924	  14864	   3a10	09_2_GTIM_PWM.elf
+Finished building: default.size.stdout
+ 
+
+14:09:44 Build Finished. 0 errors, 0 warnings. (took 2s.697ms)
+

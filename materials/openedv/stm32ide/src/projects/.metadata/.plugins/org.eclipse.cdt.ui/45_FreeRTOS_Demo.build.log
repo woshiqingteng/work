@@ -1,0 +1,22 @@
+12:03:49 **** Build of configuration Output for project 45_FreeRTOS_Demo ****
+make -j16 all 
+arm-none-eabi-gcc -o "45_FreeRTOS_Demo.elf" @"objects.list"   -mcpu=cortex-m3 -T"H:\cubeide\STM32CubeIDE_DEMO\45_FreeRTOS_Demo\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="45_FreeRTOS_Demo.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 45_FreeRTOS_Demo.elf
+ 
+arm-none-eabi-size   45_FreeRTOS_Demo.elf 
+arm-none-eabi-objdump -h -S  45_FreeRTOS_Demo.elf  > "45_FreeRTOS_Demo.list"
+   text	   data	    bss	    dec	    hex	filename
+  72424	    548	  57152	 130124	  1fc4c	45_FreeRTOS_Demo.elf
+arm-none-eabi-objcopy  -O ihex  45_FreeRTOS_Demo.elf  "45_FreeRTOS_Demo.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary  45_FreeRTOS_Demo.elf  "45_FreeRTOS_Demo.bin"
+ 
+Finished building: 45_FreeRTOS_Demo.hex
+Finished building: 45_FreeRTOS_Demo.list
+ 
+ 
+Finished building: 45_FreeRTOS_Demo.bin
+ 
+
+12:04:02 Build Finished. 0 errors, 0 warnings. (took 12s.400ms)
+

@@ -1,0 +1,10 @@
+17:40:04 **** Incremental Build of configuration Output for project 36_HZ ****
+make -j16 all 
+arm-none-eabi-size   36_HZ.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 288088	   1052	  54488	 343628	  53e4c	36_HZ.elf
+Finished building: default.size.stdout
+ 
+
+17:40:05 Build Finished. 0 errors, 0 warnings. (took 924ms)
+

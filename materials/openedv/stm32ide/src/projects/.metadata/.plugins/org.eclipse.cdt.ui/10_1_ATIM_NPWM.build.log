@@ -1,0 +1,10 @@
+10:17:28 **** Incremental Build of configuration Output for project 10_1_ATIM_NPWM ****
+make -j16 all 
+arm-none-eabi-size   10_1_ATIM_NPWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14460	     24	   1928	  16412	   401c	10_1_ATIM_NPWM.elf
+Finished building: default.size.stdout
+ 
+
+10:17:29 Build Finished. 0 errors, 0 warnings. (took 692ms)
+

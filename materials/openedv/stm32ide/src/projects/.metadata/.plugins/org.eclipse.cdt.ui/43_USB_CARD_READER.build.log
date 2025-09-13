@@ -1,0 +1,10 @@
+09:46:31 **** Incremental Build of configuration Output for project 43_USB_CARD_READER ****
+make -j16 all 
+arm-none-eabi-size   43_USB_CARD_READER.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 112568	   1128	  55800	 169496	  29618	43_USB_CARD_READER.elf
+Finished building: default.size.stdout
+ 
+
+09:46:33 Build Finished. 0 errors, 0 warnings. (took 1s.590ms)
+

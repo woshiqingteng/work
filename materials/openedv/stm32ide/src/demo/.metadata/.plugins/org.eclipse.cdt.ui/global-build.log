@@ -1,0 +1,787 @@
+09:23:55 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+../Drivers/BSP/OLED/oled.c:71:1: error: two or more data types in declaration specifiers
+   71 | void oled_init(void)
+      | ^~~~
+make: *** [Drivers/BSP/OLED/subdir.mk:19: Drivers/BSP/OLED/oled.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:23:59 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5716	     20	   2596	   8332	   208c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+09:24:09 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5716	     20	   2596	   8332	   208c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+14:48:16 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5856	     20	   2596	   8472	   2118	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+14:48:24 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5856	     20	   2596	   8472	   2118	13_OLED.elf
+Finished building: default.size.stdout
+ 
+14:49:10 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:95:3: error: 'oled_draw_point0' undeclared (first use in this function); did you mean 'oled_draw_point'?
+   95 |   oled_draw_point0, 0, 1);
+      |   ^~~~~~~~~~~~~~~~
+      |   oled_draw_point
+../Core/Src/main.c:95:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:95:19: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   95 |   oled_draw_point0, 0, 1);
+      |                   ^
+../Core/Src/main.c:95:22: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   95 |   oled_draw_point0, 0, 1);
+      |                      ^
+../Core/Src/main.c:95:22: warning: statement with no effect [-Wunused-value]
+../Core/Src/main.c:95:25: error: expected ';' before ')' token
+   95 |   oled_draw_point0, 0, 1);
+      |                         ^
+      |                         ;
+../Core/Src/main.c:95:25: error: expected statement before ')' token
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+14:49:16 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5856	     20	   2596	   8472	   2118	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+14:49:22 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5856	     20	   2596	   8472	   2118	13_OLED.elf
+Finished building: default.size.stdout
+ 
+14:50:31 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5852	     20	   2596	   8468	   2114	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+14:50:38 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5852	     20	   2596	   8468	   2114	13_OLED.elf
+Finished building: default.size.stdout
+ 
+14:51:26 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5716	     20	   2596	   8332	   208c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+14:51:32 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5716	     20	   2596	   8332	   208c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+14:51:43 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5716	     20	   2596	   8332	   208c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:13:33 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5852	     20	   2596	   8468	   2114	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:13:39 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5852	     20	   2596	   8468	   2114	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:15:34 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5960	     20	   2596	   8576	   2180	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:15:40 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5960	     20	   2596	   8576	   2180	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:18:02 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/font.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/font.d" -MT"Drivers/BSP/OLED/font.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/font.o"
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/OLED/oled.c:27:
+../Drivers/BSP/OLED/oled.h:29:10: fatal error: ../../SYSTEM/sys/sys.h: No such file or directory
+   29 | #include "../../SYSTEM/sys/sys.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/BSP/OLED/subdir.mk:22: Drivers/BSP/OLED/oled.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:28:
+../Drivers/STM32F1xx_HAL_Driver/Inc/../../BSP/OLED/oled.h:29:10: fatal error: ../../SYSTEM/sys/sys.h: No such file or directory
+   29 | #include "../../SYSTEM/sys/sys.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:18:17 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Drivers/BSP/OLED/oled.c:29:10: fatal error: ../../SYSTEM/delay/delay.h: No such file or directory
+   29 | #include "../../SYSTEM/delay/delay.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/BSP/OLED/subdir.mk:22: Drivers/BSP/OLED/oled.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:18:24 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+../Drivers/BSP/OLED/oled.c: In function 'oled_data_out':
+../Drivers/BSP/OLED/oled.c:79:5: error: 'GPIOC' undeclared (first use in this function)
+   79 |     GPIOC->ODR = (GPIOC->ODR & 0XFF00) | (data & 0X00FF);
+      |     ^~~~~
+../Drivers/BSP/OLED/oled.c:79:5: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Drivers/BSP/OLED/oled.c:27:
+../Drivers/BSP/OLED/oled.c: In function 'oled_wr_byte':
+../Drivers/BSP/OLED/oled.h:45:35: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                   ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:45:53: error: 'OLED_RS_GPIO_Port' undeclared (first use in this function)
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                                     ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:45:72: error: 'OLED_RS_Pin' undeclared (first use in this function); did you mean 'OLED_RST'?
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                                                        ^~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:45:85: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                                                                     ^~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:46:85: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   46 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_RESET); \
+      |                                                                                     ^~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:41:53: error: 'OLED_CS_GPIO_Port' undeclared (first use in this function)
+   41 |                                   HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET) : \
+      |                                                     ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:92:5: note: in expansion of macro 'OLED_CS'
+   92 |     OLED_CS(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:41:72: error: 'OLED_CS_Pin' undeclared (first use in this function); did you mean 'OLED_CS'?
+   41 |                                   HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET) : \
+      |                                                                        ^~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:92:5: note: in expansion of macro 'OLED_CS'
+   92 |     OLED_CS(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:50:53: error: 'OLED_WR_GPIO_Port' undeclared (first use in this function)
+   50 |                                   HAL_GPIO_WritePin(OLED_WR_GPIO_Port, OLED_WR_Pin, GPIO_PIN_SET) :  \
+      |                                                     ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:93:5: note: in expansion of macro 'OLED_WR'
+   93 |     OLED_WR(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:50:72: error: 'OLED_WR_Pin' undeclared (first use in this function); did you mean 'OLED_WR'?
+   50 |                                   HAL_GPIO_WritePin(OLED_WR_GPIO_Port, OLED_WR_Pin, GPIO_PIN_SET) :  \
+      |                                                                        ^~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:93:5: note: in expansion of macro 'OLED_WR'
+   93 |     OLED_WR(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.c: In function 'oled_init':
+../Drivers/BSP/OLED/oled.h:36:53: error: 'OLED_RST_GPIO_Port' undeclared (first use in this function)
+   36 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET) : \
+      |                                                     ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.h:36:73: error: 'OLED_RST_Pin' undeclared (first use in this function); did you mean 'OLED_RST'?
+   36 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET) : \
+      |                                                                         ^~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.h:36:87: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   36 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET) : \
+      |                                                                                       ^~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.h:37:87: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   37 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_RESET); \
+      |                                                                                       ^~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.c:477:9: warning: implicit declaration of function 'delay_ms' [-Wimplicit-function-declaration]
+  477 |         delay_ms(100);
+      |         ^~~~~~~~
+make: *** [Drivers/BSP/OLED/subdir.mk:22: Drivers/BSP/OLED/oled.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:31:03 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/BSP/OLED/oled.c:27:
+../Drivers/BSP/OLED/oled.h:29:10: fatal error: ../../SYSTEM/sys/sys.h: No such file or directory
+   29 | #include "../../SYSTEM/sys/sys.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/BSP/OLED/subdir.mk:22: Drivers/BSP/OLED/oled.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:28:
+../Drivers/STM32F1xx_HAL_Driver/Inc/../../BSP/OLED/oled.h:29:10: fatal error: ../../SYSTEM/sys/sys.h: No such file or directory
+   29 | #include "../../SYSTEM/sys/sys.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:31:15 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Drivers/BSP/OLED/oled.c:29:10: fatal error: ../../SYSTEM/delay/delay.h: No such file or directory
+   29 | #include "../../SYSTEM/delay/delay.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Drivers/BSP/OLED/subdir.mk:22: Drivers/BSP/OLED/oled.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:31:23 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+../Drivers/BSP/OLED/oled.c: In function 'oled_data_out':
+../Drivers/BSP/OLED/oled.c:79:5: error: 'GPIOC' undeclared (first use in this function)
+   79 |     GPIOC->ODR = (GPIOC->ODR & 0XFF00) | (data & 0X00FF);
+      |     ^~~~~
+../Drivers/BSP/OLED/oled.c:79:5: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../Drivers/BSP/OLED/oled.c:27:
+../Drivers/BSP/OLED/oled.c: In function 'oled_wr_byte':
+../Drivers/BSP/OLED/oled.h:45:35: warning: implicit declaration of function 'HAL_GPIO_WritePin' [-Wimplicit-function-declaration]
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                   ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:45:53: error: 'OLED_RS_GPIO_Port' undeclared (first use in this function)
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                                     ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:45:72: error: 'OLED_RS_Pin' undeclared (first use in this function); did you mean 'OLED_RST'?
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                                                        ^~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:45:85: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   45 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+      |                                                                                     ^~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:46:85: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   46 |                                   HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_RESET); \
+      |                                                                                     ^~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:91:5: note: in expansion of macro 'OLED_RS'
+   91 |     OLED_RS(cmd);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:41:53: error: 'OLED_CS_GPIO_Port' undeclared (first use in this function)
+   41 |                                   HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET) : \
+      |                                                     ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:92:5: note: in expansion of macro 'OLED_CS'
+   92 |     OLED_CS(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:41:72: error: 'OLED_CS_Pin' undeclared (first use in this function); did you mean 'OLED_CS'?
+   41 |                                   HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET) : \
+      |                                                                        ^~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:92:5: note: in expansion of macro 'OLED_CS'
+   92 |     OLED_CS(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:50:53: error: 'OLED_WR_GPIO_Port' undeclared (first use in this function)
+   50 |                                   HAL_GPIO_WritePin(OLED_WR_GPIO_Port, OLED_WR_Pin, GPIO_PIN_SET) :  \
+      |                                                     ^~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:93:5: note: in expansion of macro 'OLED_WR'
+   93 |     OLED_WR(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.h:50:72: error: 'OLED_WR_Pin' undeclared (first use in this function); did you mean 'OLED_WR'?
+   50 |                                   HAL_GPIO_WritePin(OLED_WR_GPIO_Port, OLED_WR_Pin, GPIO_PIN_SET) :  \
+      |                                                                        ^~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:93:5: note: in expansion of macro 'OLED_WR'
+   93 |     OLED_WR(0);
+      |     ^~~~~~~
+../Drivers/BSP/OLED/oled.c: In function 'oled_init':
+../Drivers/BSP/OLED/oled.h:36:53: error: 'OLED_RST_GPIO_Port' undeclared (first use in this function)
+   36 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET) : \
+      |                                                     ^~~~~~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.h:36:73: error: 'OLED_RST_Pin' undeclared (first use in this function); did you mean 'OLED_RST'?
+   36 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET) : \
+      |                                                                         ^~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.h:36:87: error: 'GPIO_PIN_SET' undeclared (first use in this function)
+   36 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET) : \
+      |                                                                                       ^~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.h:37:87: error: 'GPIO_PIN_RESET' undeclared (first use in this function)
+   37 |                                   HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_RESET); \
+      |                                                                                       ^~~~~~~~~~~~~~
+../Drivers/BSP/OLED/oled.c:476:9: note: in expansion of macro 'OLED_RST'
+  476 |         OLED_RST(0);
+      |         ^~~~~~~~
+../Drivers/BSP/OLED/oled.c:477:9: warning: implicit declaration of function 'delay_ms' [-Wimplicit-function-declaration]
+  477 |         delay_ms(100);
+      |         ^~~~~~~~
+make: *** [Drivers/BSP/OLED/subdir.mk:22: Drivers/BSP/OLED/oled.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:31:42 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Drivers/BSP/OLED/oled.c: In function 'oled_init':
+../Drivers/BSP/OLED/oled.c:477:9: warning: implicit declaration of function 'delay_ms' [-Wimplicit-function-declaration]
+  477 |         delay_ms(100);
+      |         ^~~~~~~~
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+D:/ST/STM32CubeIDE_1.13.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.11.3.rel1.win32_1.1.0.202305231506/tools/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Drivers/BSP/OLED/oled.o: in function `oled_init':
+C:/Users/login/Desktop/STM32CubeIDE_DEMO/13_OLED/Debug/../Drivers/BSP/OLED/oled.c:477: undefined reference to `delay_ms'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:68: 13_OLED.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:31:58 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5964	     20	   2596	   8580	   2184	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:36:34 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  12508	     20	   2596	  15124	   3b14	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:36:42 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  12388	     20	   2596	  15004	   3a9c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:36:48 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12388	     20	   2596	  15004	   3a9c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:37:05 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12388	     20	   2596	  15004	   3a9c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:37:49 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  12392	     20	   2596	  15008	   3aa0	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:37:55 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12392	     20	   2596	  15008	   3aa0	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:38:13 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12392	     20	   2596	  15008	   3aa0	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:38:25 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12392	     20	   2596	  15008	   3aa0	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:38:28 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12392	     20	   2596	  15008	   3aa0	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:40:58 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13392	     20	   2596	  16008	   3e88	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:41:04 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13392	     20	   2596	  16008	   3e88	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:42:36 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:27: warning: passing argument 3 of 'oled_draw_bitmap' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  100 |   oled_draw_bitmap(50, 0, zdyz_32x32_logo, 32, 32, 1);
+      |                           ^~~~~~~~~~~~~~~
+In file included from ../Core/Src/main.c:28:
+../Drivers/STM32F1xx_HAL_Driver/Inc/../../BSP/OLED/oled.h:77:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'const uint8_t *' {aka 'const unsigned char *'}
+   77 | void oled_draw_bitmap(int16_t x, int16_t y, uint8_t *bitmap, uint16_t p_w, uint16_t p_h, uint8_t mode); /* ÏÔÊ¾Í¼Æ¬ */
+      |                                             ~~~~~~~~~^~~~~~
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13860	     20	   2596	  16476	   405c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:42:44 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:27: warning: passing argument 3 of 'oled_draw_bitmap' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   oled_draw_bitmap(50, 0, &zdyz_32x32_logo, 32, 32, 1);
+      |                           ^~~~~~~~~~~~~~~~
+      |                           |
+      |                           const uint8_t (*)[] {aka const unsigned char (*)[]}
+In file included from ../Core/Src/main.c:28:
+../Drivers/STM32F1xx_HAL_Driver/Inc/../../BSP/OLED/oled.h:77:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'const uint8_t (*)[]' {aka 'const unsigned char (*)[]'}
+   77 | void oled_draw_bitmap(int16_t x, int16_t y, uint8_t *bitmap, uint16_t p_w, uint16_t p_h, uint8_t mode); /* ÏÔÊ¾Í¼Æ¬ */
+      |                                             ~~~~~~~~~^~~~~~
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13860	     20	   2596	  16476	   405c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:42:53 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13860	     20	   2596	  16476	   405c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:48:49 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13860	     20	   2596	  16476	   405c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:52:28 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/font.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/font.d" -MT"Drivers/BSP/OLED/font.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/font.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13860	     20	   2596	  16476	   405c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:52:33 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13860	     20	   2596	  16476	   405c	13_OLED.elf
+Finished building: default.size.stdout
+ 
+15:59:12 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/font.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/font.d" -MT"Drivers/BSP/OLED/font.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/font.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:27: warning: passing argument 3 of 'oled_draw_bitmap' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |   oled_draw_bitmap(50, 0, &zdyz_32x32_logo, 32, 32, 1);
+      |                           ^~~~~~~~~~~~~~~~
+      |                           |
+      |                           const uint8_t (*)[] {aka const unsigned char (*)[]}
+In file included from ../Core/Src/main.c:28:
+../Drivers/STM32F1xx_HAL_Driver/Inc/../../BSP/OLED/oled.h:77:54: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'const uint8_t (*)[]' {aka 'const unsigned char (*)[]'}
+   77 | void oled_draw_bitmap(int16_t x, int16_t y, uint8_t *bitmap, uint16_t p_w, uint16_t p_h, uint8_t mode); /* ÏÔÊ¾Í¼Æ¬ */
+      |                                             ~~~~~~~~~^~~~~~
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:59:36 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+15:59:42 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+16:11:56 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/font.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/font.d" -MT"Drivers/BSP/OLED/font.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/font.o"
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+16:12:03 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+16:17:57 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/font.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/font.d" -MT"Drivers/BSP/OLED/font.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/font.o"
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+16:18:04 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+16:18:23 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/font.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/font.d" -MT"Drivers/BSP/OLED/font.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/font.o"
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+16:18:30 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+16:22:34 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/font.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/font.d" -MT"Drivers/BSP/OLED/font.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/font.o"
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "13_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\login\Desktop\STM32CubeIDE_DEMO\13_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="13_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 13_OLED.elf
+ 
+arm-none-eabi-size   13_OLED.elf 
+arm-none-eabi-objdump -h -S  13_OLED.elf  > "13_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: 13_OLED.list
+ 
+16:22:42 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 

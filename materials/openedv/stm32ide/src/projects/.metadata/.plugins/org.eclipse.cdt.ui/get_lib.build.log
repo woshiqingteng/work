@@ -1,0 +1,6 @@
+10:17:54 **** Incremental Build of configuration Output for project get_lib ****
+make -j16 all 
+make: Nothing to be done for 'all'.
+
+10:17:54 Build Finished. 0 errors, 0 warnings. (took 291ms)
+

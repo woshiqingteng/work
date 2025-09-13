@@ -1,0 +1,10 @@
+16:51:54 **** Incremental Build of configuration Output for project 14_USMART ****
+make -j16 all 
+arm-none-eabi-size   14_USMART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  70536	    888	   2352	  73776	  12030	14_USMART.elf
+Finished building: default.size.stdout
+ 
+
+16:51:55 Build Finished. 0 errors, 0 warnings. (took 671ms)
+

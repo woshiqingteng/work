@@ -1,0 +1,22 @@
+15:29:36 **** Incremental Build of configuration Output for project 39_1_DSP_BasicMath ****
+make -j16 all 
+arm-none-eabi-gcc -o "39_1_DSP_BasicMath.elf" @"objects.list"   -mcpu=cortex-m3 -T"H:\cubeide\STM32CubeIDE_DEMO\39_1_DSP_BasicMath\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="39_1_DSP_BasicMath.map" -Wl,--gc-sections -static "H:\cubeide\STM32CubeIDE_DEMO\39_1_DSP_BasicMath\Drivers\CMSIS\Lib\GCC\libarm_cortexM3l_math.a" --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 39_1_DSP_BasicMath.elf
+ 
+arm-none-eabi-size   39_1_DSP_BasicMath.elf 
+arm-none-eabi-objdump -h -S  39_1_DSP_BasicMath.elf  > "39_1_DSP_BasicMath.list"
+   text	   data	    bss	    dec	    hex	filename
+  62636	    480	   2360	  65476	   ffc4	39_1_DSP_BasicMath.elf
+arm-none-eabi-objcopy  -O ihex  39_1_DSP_BasicMath.elf  "39_1_DSP_BasicMath.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary  39_1_DSP_BasicMath.elf  "39_1_DSP_BasicMath.bin"
+ 
+Finished building: 39_1_DSP_BasicMath.hex
+ 
+Finished building: 39_1_DSP_BasicMath.list
+Finished building: 39_1_DSP_BasicMath.bin
+ 
+ 
+
+15:29:38 Build Finished. 0 errors, 0 warnings. (took 1s.429ms)
+

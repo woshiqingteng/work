@@ -1,0 +1,24 @@
+12:24:55 **** Incremental Build of configuration Output for project 10_2_ATIM_COMP ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -DFOR_TEST -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -DFOR_TEST -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc -o "10_2_ATIM_COMP.elf" @"objects.list"   -mcpu=cortex-m3 -T"H:\cubeide\STM32CubeIDE_DEMO\10_2_ATIM_COMP\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_2_ATIM_COMP.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_2_ATIM_COMP.elf
+ 
+arm-none-eabi-size   10_2_ATIM_COMP.elf 
+arm-none-eabi-objdump -h -S  10_2_ATIM_COMP.elf  > "10_2_ATIM_COMP.list"
+   text	   data	    bss	    dec	    hex	filename
+  13160	     20	   1924	  15104	   3b00	10_2_ATIM_COMP.elf
+arm-none-eabi-objcopy  -O ihex  10_2_ATIM_COMP.elf  "10_2_ATIM_COMP.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary  10_2_ATIM_COMP.elf  "10_2_ATIM_COMP.bin"
+ 
+Finished building: 10_2_ATIM_COMP.list
+Finished building: 10_2_ATIM_COMP.hex
+Finished building: 10_2_ATIM_COMP.bin
+ 
+ 
+ 
+
+12:24:57 Build Finished. 0 errors, 0 warnings. (took 1s.994ms)
+

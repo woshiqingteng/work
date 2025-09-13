@@ -1,0 +1,10 @@
+14:29:54 **** Incremental Build of configuration Output for project 18_4_ADC_DMA_OverSampling ****
+make -j16 all 
+arm-none-eabi-size   18_4_ADC_DMA_OverSampling.elf 
+   text	   data	    bss	    dec	    hex	filename
+  49964	    116	   7524	  57604	   e104	18_4_ADC_DMA_OverSampling.elf
+Finished building: default.size.stdout
+ 
+
+14:29:54 Build Finished. 0 errors, 0 warnings. (took 685ms)
+

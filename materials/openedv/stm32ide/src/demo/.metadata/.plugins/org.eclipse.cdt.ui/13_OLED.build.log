@@ -1,0 +1,10 @@
+16:22:42 **** Incremental Build of configuration Debug for project 13_OLED ****
+make -j16 all 
+arm-none-eabi-size   13_OLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13804	     20	   2596	  16420	   4024	13_OLED.elf
+Finished building: default.size.stdout
+ 
+
+16:22:43 Build Finished. 0 errors, 0 warnings. (took 1s.65ms)
+

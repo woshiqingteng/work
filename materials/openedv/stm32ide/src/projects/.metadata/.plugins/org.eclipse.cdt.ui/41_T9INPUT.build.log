@@ -1,0 +1,10 @@
+10:45:01 **** Incremental Build of configuration Output for project 41_T9INPUT ****
+make -j16 all 
+arm-none-eabi-size   41_T9INPUT.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 295632	   1242	  54496	 351370	  55c8a	41_T9INPUT.elf
+Finished building: default.size.stdout
+ 
+
+10:45:02 Build Finished. 0 errors, 0 warnings. (took 987ms)
+

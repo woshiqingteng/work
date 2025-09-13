@@ -1,0 +1,10 @@
+15:36:20 **** Incremental Build of configuration Output for project 21_3_DAC_SineWave ****
+make -j16 all 
+arm-none-eabi-size   21_3_DAC_SineWave.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57836	    120	  10680	  68636	  10c1c	21_3_DAC_SineWave.elf
+Finished building: default.size.stdout
+ 
+
+15:36:21 Build Finished. 0 errors, 0 warnings. (took 1s.270ms)
+

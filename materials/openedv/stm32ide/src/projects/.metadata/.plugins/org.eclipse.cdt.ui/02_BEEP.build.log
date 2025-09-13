@@ -1,0 +1,10 @@
+11:33:48 **** Incremental Build of configuration Output for project 02_BEEP ****
+make -j16 all 
+arm-none-eabi-size   02_BEEP.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5136	     20	   1572	   6728	   1a48	02_BEEP.elf
+Finished building: default.size.stdout
+ 
+
+11:33:49 Build Finished. 0 errors, 0 warnings. (took 585ms)
+

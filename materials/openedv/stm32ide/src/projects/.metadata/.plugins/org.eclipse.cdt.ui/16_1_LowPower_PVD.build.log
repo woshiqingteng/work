@@ -1,0 +1,10 @@
+14:51:37 **** Incremental Build of configuration Output for project 16_1_LowPower_PVD ****
+make -j16 all 
+arm-none-eabi-size   16_1_LowPower_PVD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43216	    116	   2284	  45616	   b230	16_1_LowPower_PVD.elf
+Finished building: default.size.stdout
+ 
+
+14:51:37 Build Finished. 0 errors, 0 warnings. (took 630ms)
+

@@ -1,0 +1,10 @@
+15:56:24 **** Incremental Build of configuration Output for project 10_3_ATIM_CPLM_PWM ****
+make -j16 all 
+arm-none-eabi-size   10_3_ATIM_CPLM_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13768	     20	   1924	  15712	   3d60	10_3_ATIM_CPLM_PWM.elf
+Finished building: default.size.stdout
+ 
+
+15:56:24 Build Finished. 0 errors, 0 warnings. (took 671ms)
+

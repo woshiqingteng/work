@@ -1,0 +1,10 @@
+10:18:00 **** Incremental Build of configuration Output for project 40_ATKNCR ****
+make -j16 all 
+arm-none-eabi-size   40_ATKNCR.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 315632	   1134	  55360	 372126	  5ad9e	40_ATKNCR.elf
+Finished building: default.size.stdout
+ 
+
+10:18:01 Build Finished. 0 errors, 0 warnings. (took 1s.12ms)
+

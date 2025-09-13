@@ -1,0 +1,5 @@
+2023-11-15 14:09:58,674 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Nov 15, 2023 2:09:58 PM java.util.prefs.WindowsPreferences WindowsRegOpenKey1
+2023-11-15 14:09:58,742 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] WARNING: Trying to recreate Windows registry node Software\JavaSoft\Prefs\com\st\library\analyticscore at root 0xffffffff80000001.
+2023-11-15 14:09:58,743 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2023-11-15 14:10:00,699 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2023-11-15 14:10:00,700 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

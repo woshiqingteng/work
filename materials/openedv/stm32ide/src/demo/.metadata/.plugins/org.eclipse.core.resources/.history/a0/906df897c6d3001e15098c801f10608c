@@ -1,0 +1,36 @@
+/*
+ * oled.h
+ *
+ *  Created on: Feb 25, 2024
+ *      Author: login
+ */
+
+#ifndef BSP_OLED_OLED_H_
+#define BSP_OLED_OLED_H_
+
+#include "main.h"
+
+#define OLED_RS(x)				x? 	HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_SET) : \
+								HAL_GPIO_WritePin(OLED_RS_GPIO_Port, OLED_RS_Pin, GPIO_PIN_RESET)
+
+#define OLED_RST(x)				x? 	HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET) : \
+								HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_RESET)
+
+#define OLED_WR(x)				x? 	HAL_GPIO_WritePin(OLED_WR_GPIO_Port, OLED_WR_Pin, GPIO_PIN_SET) : \
+								HAL_GPIO_WritePin(OLED_WR_GPIO_Port, OLED_WR_Pin, GPIO_PIN_RESET)
+
+#define OLED_RD(x)				x? 	HAL_GPIO_WritePin(OLED_RD_GPIO_Port, OLED_RD_Pin, GPIO_PIN_SET) : \
+								HAL_GPIO_WritePin(OLED_RD_GPIO_Port, OLED_RD_Pin, GPIO_PIN_RESET)
+
+#define OLED_CS(x)				x? 	HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_SET) : \
+								HAL_GPIO_WritePin(OLED_CS_GPIO_Port, OLED_CS_Pin, GPIO_PIN_RESET)
+
+
+#define	OLED_CMD				0
+#define	OLED_DATA				1
+
+void oled_init(void);
+void oled_test(void);
+void oled_clear(void);
+void oled_draw_point(uint8_t x, uint8_t y, uint8_t dot);
+#endif /* BSP_OLED_OLED_H_ */

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\39_2_DSP_FFT"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\12_OLED"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\44_USB_VSP"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\USB"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\42_3_TOUCH_SRAM_APP"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\42_2_RTC_FLASH_APP"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\42_1_IAP_Bootloader"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\41_T9INPUT"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\40_ATKNCR"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\35_FATFS"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\34_SD"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\31_FLASH_EEPROM"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\30_NRF24C01"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\29_DHT11"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\28_DS18B20"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\27_REMOTE"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\26_TOUCH"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\25_CAN"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\24_RS485"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\23_SPI"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\22_IIC"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\21_3_DAC_SineWave"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\21_2_DAC_Triangular_Wave"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\21_1_DAC_Output"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\20_LSENS"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\19_ADC_Temperature"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\18_4_ADC_DMA_OverSampling"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\18_3_ADC_DMA_Multi_Channel"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\18_2_ADC_DMA_Single_Channel"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\18_1_ADC_Single_Channel"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\17_DMA"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\16_4_LowPower_Standby"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\16_3_LowPower_Stop"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\16_2_LowPower_Sleep"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\16_1_LowPower_PVD"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\15_RTC"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\14_USMART"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\13_TFTLCD"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\33_MALLOC"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\36_HZ"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\45_FreeRTOS_Demo"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\43_USB_CARD_READER"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\38_PHOTO"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\01_LED"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\32_OV7725_Camera"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\37_PICTURE"/>
+			<item value="H:\cubeide\STM32CubeIDE_DEMO\02_BEEP"/>
+		</list>
+	</section>
+</section>

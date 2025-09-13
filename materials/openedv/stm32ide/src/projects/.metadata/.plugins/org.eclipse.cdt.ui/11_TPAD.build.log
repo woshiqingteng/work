@@ -1,0 +1,10 @@
+11:24:05 **** Incremental Build of configuration Output for project 11_TPAD ****
+make -j16 all 
+arm-none-eabi-size   11_TPAD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  36124	    476	   2268	  38868	   97d4	11_TPAD.elf
+Finished building: default.size.stdout
+ 
+
+11:24:06 Build Finished. 0 errors, 0 warnings. (took 576ms)
+

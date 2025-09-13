@@ -1,0 +1,10 @@
+11:24:16 **** Incremental Build of configuration Release for project 32_OV7725_Camera ****
+make -j16 all 
+arm-none-eabi-size   32_OV7725_Camera.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44520	    176	   2432	  47128	   b818	32_OV7725_Camera.elf
+Finished building: default.size.stdout
+ 
+
+11:24:17 Build Finished. 0 errors, 0 warnings. (took 740ms)
+

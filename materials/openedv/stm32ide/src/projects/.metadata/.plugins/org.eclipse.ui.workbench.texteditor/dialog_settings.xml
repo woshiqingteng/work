@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="I2C_MasterTransmit_TXE"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="I2C_MasterTransmit_TXE"/>
+			<item value="HAL_I2C_MasterTxCpltCallback"/>
+			<item value="g_usb_usart_printf_buffer"/>
+			<item value="g_usb_rx_buffer"/>
+			<item value="g_usb_usart_rx_buffer"/>
+			<item value="USBD_Get_USB_Status"/>
+			<item value="FM_FAT32"/>
+			<item value="ov7725_init_reg_tb1"/>
+			<item value="S_YOFF"/>
+			<item value="g_sram_handle"/>
+			<item value="IIC_SCL_Pin"/>
+			<item value="KernelState"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1340"/>
+		<item key="DIALOG_Y_ORIGIN" value="132"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="355"/>
+		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>
+	</section>
+</section>

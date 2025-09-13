@@ -1,0 +1,10 @@
+14:24:21 **** Incremental Build of configuration Output for project 18_3_ADC_DMA_Multi_Channel ****
+make -j16 all 
+arm-none-eabi-size   18_3_ADC_DMA_Multi_Channel.elf 
+   text	   data	    bss	    dec	    hex	filename
+  50516	    116	   2900	  53532	   d11c	18_3_ADC_DMA_Multi_Channel.elf
+Finished building: default.size.stdout
+ 
+
+14:24:21 Build Finished. 0 errors, 0 warnings. (took 724ms)
+

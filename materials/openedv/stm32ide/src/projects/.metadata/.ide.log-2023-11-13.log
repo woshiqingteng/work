@@ -1,0 +1,15 @@
+2023-11-14 11:42:49,232 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-11-14 11:42:50,427 [INFO] UserAuth:179 - activating auth plugin
+2023-11-14 11:42:50,449 [INFO] UserAuth:393 - Internet connection configuration mode: 1
+2023-11-14 11:42:50,509 [INFO] JxBrowserEngine:151 - Initiate JxBrowser Engine with user profile folder
+2023-11-14 11:42:51,380 [INFO] WebApp:157 - Instantiating new browser for Auth
+2023-11-14 11:42:51,849 [INFO] WebApp:753 - Register for checkConnection events
+2023-11-14 11:42:51,849 [INFO] WebApp:390 - Apply proxy settings
+2023-11-14 11:42:51,849 [INFO] WebApp:475 - Chromium requires no authentication
+2023-11-14 11:42:51,854 [INFO] WebApp:418 - Direct internet connection detected
+2023-11-14 11:42:51,967 [INFO] WebApp:188 - Starting web application
+2023-11-14 11:42:51,967 [INFO] WebApp:520 - Web application path used H:\cubeide\STM32CubeIDE_1.13.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.9.1.202307191849\db\plugins\mcufinder\reactClient1\index.html
+2023-11-14 11:42:53,745 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2023-11-14 11:42:53,745 [INFO] UserAuth:179 - activating auth plugin
+2023-11-14 11:42:53,746 [INFO] UserAuth:393 - Internet connection configuration mode: 1
+2023-11-14 11:48:25,371 [INFO] WebApp:588 - userauth.ini deleted or not created

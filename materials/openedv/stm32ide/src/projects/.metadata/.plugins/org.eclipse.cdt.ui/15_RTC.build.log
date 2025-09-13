@@ -1,0 +1,23 @@
+09:59:49 **** Incremental Build of configuration Output for project 15_RTC ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -DFOR_TEST -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc -o "15_RTC.elf" @"objects.list"   -mcpu=cortex-m3 -T"H:\cubeide\STM32CubeIDE_DEMO\15_RTC\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="15_RTC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 15_RTC.elf
+ 
+arm-none-eabi-size   15_RTC.elf 
+arm-none-eabi-objdump -h -S  15_RTC.elf  > "15_RTC.list"
+   text	   data	    bss	    dec	    hex	filename
+  73560	    852	   2388	  76800	  12c00	15_RTC.elf
+arm-none-eabi-objcopy  -O ihex  15_RTC.elf  "15_RTC.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary  15_RTC.elf  "15_RTC.bin"
+ 
+Finished building: 15_RTC.hex
+ 
+Finished building: 15_RTC.bin
+Finished building: 15_RTC.list
+ 
+ 
+
+09:59:51 Build Finished. 0 errors, 0 warnings. (took 2s.311ms)
+

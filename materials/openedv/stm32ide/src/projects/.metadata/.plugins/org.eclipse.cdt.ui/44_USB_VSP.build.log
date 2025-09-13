@@ -1,0 +1,10 @@
+11:41:01 **** Incremental Build of configuration Output for project 44_USB_VSP ****
+make -j16 all 
+arm-none-eabi-size   44_USB_VSP.elf 
+   text	   data	    bss	    dec	    hex	filename
+  87680	    920	  48424	 137024	  21740	44_USB_VSP.elf
+Finished building: default.size.stdout
+ 
+
+11:41:02 Build Finished. 0 errors, 0 warnings. (took 823ms)
+

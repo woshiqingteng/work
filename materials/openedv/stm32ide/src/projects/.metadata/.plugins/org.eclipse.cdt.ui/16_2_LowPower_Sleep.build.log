@@ -1,0 +1,10 @@
+15:35:40 **** Incremental Build of configuration Output for project 16_2_LowPower_Sleep ****
+make -j16 all 
+arm-none-eabi-size   16_2_LowPower_Sleep.elf 
+   text	   data	    bss	    dec	    hex	filename
+  43500	    120	   2280	  45900	   b34c	16_2_LowPower_Sleep.elf
+Finished building: default.size.stdout
+ 
+
+15:35:41 Build Finished. 0 errors, 0 warnings. (took 724ms)
+

@@ -1,0 +1,23 @@
+09:09:02 **** Incremental Build of configuration Output for project 12_OLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/BSP/OLED/oled.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xE -DFOR_TEST -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/OLED/oled.d" -MT"Drivers/BSP/OLED/oled.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/BSP/OLED/oled.o"
+arm-none-eabi-gcc -o "12_OLED.elf" @"objects.list"   -mcpu=cortex-m3 -T"H:\cubeide\STM32CubeIDE_DEMO\12_OLED\STM32F103ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="12_OLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 12_OLED.elf
+ 
+arm-none-eabi-size   12_OLED.elf 
+arm-none-eabi-objdump -h -S  12_OLED.elf  > "12_OLED.list"
+   text	   data	    bss	    dec	    hex	filename
+  40112	    476	   3212	  43800	   ab18	12_OLED.elf
+arm-none-eabi-objcopy  -O ihex  12_OLED.elf  "12_OLED.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary  12_OLED.elf  "12_OLED.bin"
+ 
+Finished building: 12_OLED.hex
+Finished building: 12_OLED.list
+ 
+Finished building: 12_OLED.bin
+ 
+ 
+
+09:09:04 Build Finished. 0 errors, 0 warnings. (took 1s.618ms)
+

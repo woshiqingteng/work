@@ -1,0 +1,10 @@
+09:30:44 **** Incremental Build of configuration Output for project 34_SD ****
+make -j16 all 
+arm-none-eabi-size   34_SD.elf 
+   text	   data	    bss	    dec	    hex	filename
+  79752	    832	  46112	 126696	  1eee8	34_SD.elf
+Finished building: default.size.stdout
+ 
+
+09:30:45 Build Finished. 0 errors, 0 warnings. (took 814ms)
+
