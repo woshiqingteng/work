@@ -1,0 +1,12 @@
+..\obj\cpu_bsp.o: ..\UCOSII\UCOS-BSP\cpu_bsp.c
+..\obj\cpu_bsp.o: ..\UCOSII\uC-CPU\cpu_core.h
+..\obj\cpu_bsp.o: ..\UCOSII\uC-CPU\ARM-Cortex-M4\RealView\cpu.h
+..\obj\cpu_bsp.o: ..\UCOSII\uC-CPU\cpu_def.h
+..\obj\cpu_bsp.o: ..\UCOSII\UCOS-CONFIG\cpu_cfg.h
+..\obj\cpu_bsp.o: ..\UCOSII\uC-LIB\lib_def.h
+..\obj\cpu_bsp.o: ..\UCOSII\uC-LIB\lib_mem.h
+..\obj\cpu_bsp.o: ..\UCOSII\uC-CPU\cpu_core.h
+..\obj\cpu_bsp.o: ..\UCOSII\UCOS-CONFIG\lib_cfg.h
+..\obj\cpu_bsp.o: ..\UCOSII\uC-LIB\lib_str.h
+..\obj\cpu_bsp.o: ..\UCOSII\uC-LIB\lib_ascii.h
+..\obj\cpu_bsp.o: ..\UCOSII\UCOS-BSP\bsp.h
