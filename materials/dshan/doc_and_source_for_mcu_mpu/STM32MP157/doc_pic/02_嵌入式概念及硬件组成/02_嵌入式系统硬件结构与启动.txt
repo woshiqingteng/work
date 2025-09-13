@@ -1,0 +1,103 @@
+嵌入式系统硬件结构与启动
+
+第01节 XIP的概念
+XIP: eXecute In Place, 本地执行。可以不用将代码拷贝到内存，而直接在代码的存储空间运行。
+XIP devices: Devices which are directly addressable by CPU
+
+
+第02节 嵌入式系统硬件组成
+
+一句话引出整个嵌入式系统: 支持多种设备启动
+
+问题引出:
+ a. 系统支持SPI FLASH启动.
+    这意味着可以运行SPI FLASH上的代码
+    the system can boot from spi flash,
+    so it needs to run code on spi flash
+    
+ b. 但是SPI FLASH不是XIP设备, 
+    cpu无法直接执行里面的代码
+    but the spi flash isn't xip device,
+    cpu can't run code on spi flash directly
+ 
+    问题来了，
+    CPU如何执行SPI FLASH上的代码?
+    一上电, CPU执行的第1个程序、第1条指令在哪里?
+    
+    how can the cpu run the code on spi flash ?
+    where is the first code run by cpu, when power up ?
+
+答案:
+a. ARM板子支持多种启动方式：XIP设备启动、非XIP设备启动等等。
+   比如：Nor Flash、SD卡、SPI Flash, 甚至支持UART、USB、网卡启动。
+   这些设备中，很多都不是XIP设备。
+   
+   问：既然CPU无法直接运行非XIP设备的代码，为何可以从非XIP设备启动？
+   答：上电后，CPU运行的第1条指令、第1个程序，位于片内ROM中，它是XIP设备。
+       这个程序会执行必要的初始化，
+	   比如设置时钟、设置内存；
+	   再从"非XIP设备"中把程序读到内存；
+	   最后启动这上程序。
+	   
+    猜测: ARM芯片内部有很多部件，这是一个片上系统(System on chip),
+	      比如有：
+		  cpu
+		  rom
+		  ram
+		  memory controller --- ddr
+		  sd/mmc controller --- sd card
+		  spi controller    --- spi flash
+		  usb controller    --- usb storage device
+		  uart controller
+		  ......
+		  interrtupt controller
+		  
+
+b. 跟PC的类比
+   CPU      ---- 单独的芯片
+   启动设备 ---- BIOS芯片
+   DDR      ---- 单独的可拔插式模块
+   存储设备 ---- SATA硬盘，可拔插
+   usb controller ...
+
+
+第03节 嵌入式系统启动流程概述
+
+主芯片内部有ROM，ROM程序协助从非XIP设备启动。
+以SD卡启动为例。
+而CPU只能运行XIP设备中的程序
+ROM程序做什么？
+显然：ROM需要把SD卡上的程序读到内存里(片内RAM或是片外的DDR)
+
+ROM程序要做的事情：
+a. 初始化硬件
+   初始化时钟，提高CPU、外设速度
+   初始化内存：DDR需要初始化才能使用
+   初始化其他硬件，比如看门狗、SD卡等
+   
+b. 从外设把程序复制到内存
+b.1 
+   支持那么多的启动方式，SD卡、SPI FLASH、USB DISK，
+   怎么选择？
+   通过跳线，选择某个设备；
+   或
+   通过跳线，选择一个设备列表，按列表顺序逐个尝试
+   或
+   不让客户选择，按固定顺序逐个尝试
+   
+b.2 内存那么大，把程序从SD卡等设备，复制到内存哪个位置？复制多长？
+    烧写在SD卡等设备上的程序，含有一个头部信息，里面指定了内存地址和长度；
+	或
+	不给客户选择，程序被复制到内存固定的位置，长度也固定。
+
+b.3 程序在SD卡上怎么存？
+    原始二进制(raw bin),
+	或
+	作为一个文件保存在分区里
+	
+
+c. 执行新程序
+
+
+第04节 具体单板的启动流程
+	

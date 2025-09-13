@@ -1,0 +1,6 @@
+1.100ASK_STM32F103的原理图使用OrCAD Capture软件设计;
+2.100ASK_STM32F103_V12原理图.pdf为源文件导出pdf文件，使用常规pdf查看软件打开即可;(推荐)
+3.100ASK_STM32F103_V12.DSN为原理图源文件,可通过Orcad官网下载Capture试用版本打开该文件: https://www.orcad.com/orcad-free-trial (不建议初学者操作)
+4.100ASK_STM32F103_V12.DSN仅供学员学习用途,禁止商业使用,深圳百问网科技有限公司保留所有权利;
+
+

@@ -1,0 +1,11 @@
+Dependencies for Project 'UART_Reg', Target 'UART_Reg': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\Main\main.c)(0x5F8D2BF5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CPU -I ..\Driver -I ..\Main-ID:\CodeIDE\Keil\Keil\STM32F1xx_DFP\2.3.0\Device\Include-ID:\CodeIDE\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="532" -DSTM32F10X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\CodeIDE\Keil\ARM\ARMCC\include\stdio.h)(0x5F63877C)
+I (..\Main\main.h)(0x5F8CF379)
+I (..\CPU\stm32f103ze.h)(0x5F8D0E85)
+I (..\Driver\driver_uart.h)(0x5F8D24C9)
+F (..\CPU\startup_stm32f10x_hd.s)(0x5F8D0A32)(--cpu Cortex-M3 -g --apcs=interwork -ID:\CodeIDE\Keil\Keil\STM32F1xx_DFP\2.3.0\Device\Include-ID:\CodeIDE\Keil\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 532" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
+F (..\Driver\driver_uart.c)(0x5F8D279B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\CPU -I ..\Driver -I ..\Main-ID:\CodeIDE\Keil\Keil\STM32F1xx_DFP\2.3.0\Device\Include-ID:\CodeIDE\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="532" -DSTM32F10X_HD-o .\objects\driver_uart.o --omf_browse .\objects\driver_uart.crf --depend .\objects\driver_uart.d)
+I (..\Driver\driver_uart.h)(0x5F8D24C9)
+I (..\CPU\stm32f103ze.h)(0x5F8D0E85)

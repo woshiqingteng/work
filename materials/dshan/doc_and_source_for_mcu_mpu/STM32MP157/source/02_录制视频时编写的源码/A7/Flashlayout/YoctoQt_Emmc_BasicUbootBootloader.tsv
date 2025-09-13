@@ -1,0 +1,10 @@
+#Opt	Id	Name	Type	IP	Offset	Binary
+-	0x01	fsbl1-boot	Binary	none	0x0	Ram/tf-a-stm32mp157c-ya157c-512d-v2.stm32
+-	0x03	ssbl-boot	Binary	none	0x0	Ram/u-boot.stm32
+P	0x04	fsbl1	Binary	mmc1	boot1	u-boot-spl.stm32
+P	0x05	fsbl2	Binary	mmc1	boot2	u-boot-spl.stm32
+PD	0x06	ssbl	Binary	mmc1	0x00080000	u-boot.img
+-	0x21	boot	System	mmc1	0x00280000	st-image-bootfs-openstlinux-eglfs-100ask.ext4
+-	0x22	vendorfs	FileSystem	mmc1	0x04280000	st-image-vendorfs-openstlinux-eglfs-100ask.ext4
+-	0x23	rootfs	FileSystem	mmc1	0x05280000	100ask-image-qt-openstlinux-eglfs-100ask.ext4
+-	0x24	userfs	FileSystem	mmc1	0xC5280000	st-image-userfs-openstlinux-eglfs-100ask.ext4

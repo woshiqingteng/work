@@ -1,0 +1,8 @@
+uuu_version 1.2.39
+FB: ucmd setenv fastboot_dev mmc
+FB: ucmd setenv mmcdev ${emmc_dev}
+FB: ucmd mmc dev ${emmc_dev}
+FB: flash bootloader >E:/doc_and_source_for_mcu_mpu/IMX6ULL/source/02_录制视频时现场编写的源码/05_uart/led.imx
+FB: ucmd if env exists emmc_ack; then ; else setenv emmc_ack 0; fi;
+FB: ucmd mmc partconf ${emmc_dev} ${emmc_ack} 1 0
+FB: done

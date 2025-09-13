@@ -1,0 +1,8 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\driver_uart.o"
+--strict --scatter ".\Objects\UART_Reg.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\UART_Reg.map" -o .\Objects\UART_Reg.axf

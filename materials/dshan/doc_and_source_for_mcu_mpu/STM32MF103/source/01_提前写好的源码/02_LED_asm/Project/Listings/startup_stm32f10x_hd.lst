@@ -1,0 +1,152 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 PRESERVE8
+    2 00000000                 THUMB
+    3 00000000         
+    4 00000000         ; Vector Table Mapped to Address 0 at Reset
+    5 00000000                 AREA             RESET, DATA, READONLY
+    6 00000000         
+    7 00000000 00000000 
+                       __Vectors
+                               DCD              0
+    8 00000004 00000000        DCD              Reset_Handler ; Reset Handler
+    9 00000008         
+   10 00000008                 AREA             |.text|, CODE, READONLY
+   11 00000000         
+   12 00000000         ; Reset handler
+   13 00000000         Reset_Handler
+                               PROC
+   14 00000000         
+   15 00000000         ; 使能GPIOB 
+   16 00000000 480E            LDR              R0, =(0x40021000 + 0x18) 
+                                                            ; RCC_APB2ENR
+   17 00000002 6801            LDR              R1, [R0]
+   18 00000004 F041 0108       ORR              R1, R1, #(1<<3)
+   19 00000008 6001            STR              R1, [R0]
+   20 0000000A         
+   21 0000000A         ; 设置GPIOB0为输出引脚
+   22 0000000A 480D            LDR              R0, =(0x40010C00 + 0) 
+                                                            ; GPIOB_ODR
+   23 0000000C 6801            LDR              R1, [R0]
+   24 0000000E F041 0101       ORR              R1, R1, #(1<<0)
+   25 00000012 6001            STR              R1, [R0]
+   26 00000014         
+   27 00000014         MainLoop
+   28 00000014         ; 设置GPIIOB0输出高电平
+   29 00000014 480B            LDR              R0, =(0x40010C00 + 0xc) 
+                                                            ; GPIOB_ODR
+   30 00000016 6801            LDR              R1, [R0]
+   31 00000018 F041 0101       ORR              R1, R1, #(1<<0)
+   32 0000001C 6001            STR              R1, [R0]
+   33 0000001E F000 F808       BL               Delay
+   34 00000022         
+   35 00000022         ; 设置GPIIOB0输出低电平
+   36 00000022 4808            LDR              R0, =(0x40010C00 + 0xc) 
+                                                            ; GPIOB_ODR
+   37 00000024 6801            LDR              R1, [R0]
+   38 00000026 F021 0101       BIC              R1, R1, #(1<<0)
+   39 0000002A 6001            STR              R1, [R0]
+   40 0000002C F000 F801       BL               Delay
+   41 00000030 E7F0            B                MainLoop
+   42 00000032         
+   43 00000032         Delay
+   44 00000032 4805            LDR              R0, =300000
+   45 00000034         DelayLoop
+   46 00000034 3801            SUBS             R0, #1
+   47 00000036 D1FD            BNE              DelayLoop
+   48 00000038 4770            BX               LR
+   49 0000003A BF00            NOP
+   50 0000003C                 ENDP
+   51 0000003C                 END
+              40021018 
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+              40010C00 
+              40010C0C 
+              000493E0 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\startup_stm32f10x_hd.d -o.\objects\startup_stm32f10x_hd.
+o -I.\RTE\_LED_Reg -IC:\Users\weidongshan\AppData\Local\Arm\Packs\Keil\STM32F1x
+x_DFP\2.3.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL S
+ETA 1" --predefine="__UVISION_VERSION SETA 527" --predefine="STM32F10X_HD SETA 
+1" --list=.\listings\startup_stm32f10x_hd.lst ..\CPU\startup_stm32f10x_hd.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 5 in file ..\CPU\startup_stm32f10x_hd.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 7 in file ..\CPU\startup_stm32f10x_hd.s
+   Uses
+      None
+Comment: __Vectors unused
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 10 in file ..\CPU\startup_stm32f10x_hd.s
+   Uses
+      None
+Comment: .text unused
+Delay 00000032
+
+Symbol: Delay
+   Definitions
+      At line 43 in file ..\CPU\startup_stm32f10x_hd.s
+   Uses
+      At line 33 in file ..\CPU\startup_stm32f10x_hd.s
+      At line 40 in file ..\CPU\startup_stm32f10x_hd.s
+
+DelayLoop 00000034
+
+Symbol: DelayLoop
+   Definitions
+      At line 45 in file ..\CPU\startup_stm32f10x_hd.s
+   Uses
+      At line 47 in file ..\CPU\startup_stm32f10x_hd.s
+Comment: DelayLoop used once
+MainLoop 00000014
+
+Symbol: MainLoop
+   Definitions
+      At line 27 in file ..\CPU\startup_stm32f10x_hd.s
+   Uses
+      At line 41 in file ..\CPU\startup_stm32f10x_hd.s
+Comment: MainLoop used once
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 13 in file ..\CPU\startup_stm32f10x_hd.s
+   Uses
+      At line 8 in file ..\CPU\startup_stm32f10x_hd.s
+Comment: Reset_Handler used once
+5 symbols
+342 symbols in table

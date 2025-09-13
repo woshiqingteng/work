@@ -1,0 +1,11 @@
+ROM_LOAD 0x8000000 0x80000
+{
+    ROM_EXEC 0x8000000 0x80000; Root region
+    {
+        .ANY (+RO); All code and constant data
+    }
+    RAM 0x20000000 0x10000
+    {
+        .ANY (+RW, +ZI); All non-constant data
+    }
+}

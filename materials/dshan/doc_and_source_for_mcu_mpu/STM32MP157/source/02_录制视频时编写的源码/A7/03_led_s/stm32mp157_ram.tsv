@@ -1,0 +1,3 @@
+#Opt	Id	Name	Type	IP	Offset	Binary
+-	0x01	fsbl1-boot	Binary	none	0x0	Flashlayout/tf-a-stm32mp157c-100ask-512d-v1-serialboot.stm32
+-	0x03	ssbl-boot	Binary	none	0x0	03_led_s/led.stm32

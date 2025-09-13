@@ -1,0 +1,123 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 PRESERVE8
+    3 00000000                 THUMB
+    4 00000000         
+    5 00000000         
+    6 00000000         ; Vector Table Mapped to Address 0 at Reset
+    7 00000000                 AREA             RESET, DATA, READONLY
+    8 00000000                 EXPORT           __Vectors
+    9 00000000         
+   10 00000000         
+   11 00000000 00000000 
+                       __Vectors
+                               DCD              0
+   12 00000004 08000009        DCD              0x08000009  ; //Reset_Handler  
+                                                                        ; Reset
+                                                             Handler
+   13 00000008         
+   14 00000008                 AREA             |.text|, CODE, READONLY
+   15 00000000         
+   16 00000000         ; Reset handler
+   17 00000000         Reset_Handler
+                               PROC
+   18 00000000                 EXPORT           Reset_Handler             [WEAK
+]
+   19 00000000                 IMPORT           mymain
+   20 00000000         
+   21 00000000                 IMPORT           SystemInit
+   22 00000000         
+   23 00000000 F8DF D008       LDR              SP, =(0x20000000+0x10000)
+   24 00000004         
+   25 00000004 F7FF FFFE       BL               SystemInit
+   26 00000008         
+   27 00000008         ;BL mymain
+   28 00000008 4801            LDR              R0, =mymain
+   29 0000000A 4780            BLX              R0
+   30 0000000C         
+   31 0000000C                 ENDP
+   32 0000000C         
+   33 0000000C                 END
+              20010000 
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\start.d -o.\objects\start.o -I.\RTE\_led_c -IC:\Users\we
+idongshan\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include -IC:\
+Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VE
+RSION SETA 527" --predefine="STM32F10X_HD SETA 1" --list=.\listings\start.lst s
+tart.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 7 in file start.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 11 in file start.s
+   Uses
+      At line 8 in file start.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 14 in file start.s
+   Uses
+      None
+Comment: .text unused
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 17 in file start.s
+   Uses
+      At line 18 in file start.s
+Comment: Reset_Handler used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+SystemInit 00000000
+
+Symbol: SystemInit
+   Definitions
+      At line 21 in file start.s
+   Uses
+      At line 25 in file start.s
+Comment: SystemInit used once
+mymain 00000000
+
+Symbol: mymain
+   Definitions
+      At line 19 in file start.s
+   Uses
+      At line 28 in file start.s
+Comment: mymain used once
+2 symbols
+341 symbols in table
