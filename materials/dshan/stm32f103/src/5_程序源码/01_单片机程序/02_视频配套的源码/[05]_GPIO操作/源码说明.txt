@@ -1,0 +1,9 @@
+0501_led            : LED闪烁
+0501_led_empty      : 还没使用cubemx初始化LED引脚,为了和0501_led进行比较
+0502_led_register   : 不使用HAL函数,直接操作GPIOC_ODR寄存器来控制LED
+0503_led_register2  : 不使用HAL函数,直接操作GPIOC_BSRR寄存器来控制LED
+0504_c_pointer      : 演示指针的用法
+0505_struct_pointer : 演示结构体指针的用法,用来操作GPIO寄存器
+0506_key_led_cubemx : 使用按键控制LED,按键的初始化代码是cubemx生成的
+0507_key_led_manual : 使用按键控制LED,按键的初始化代码是手写的
+0508_light_beep     : 使用光敏电阻控制LED、蜂鸣器
